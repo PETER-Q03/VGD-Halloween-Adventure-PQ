@@ -1,0 +1,111 @@
+[gd_scene load_steps=9 format=3 uid="uid://bfaq0nqhsym8m"]
+
+[ext_resource type="Texture2D" uid="uid://cudigbx5u3vos" path="res://Graveyard/Parallax Background/Background/Sky.png" id="1_2m8fs"]
+[ext_resource type="Texture2D" uid="uid://boyllgbk5t3b7" path="res://Graveyard/Parallax Background/Background/Cloud 3.png" id="2_jcilh"]
+[ext_resource type="Texture2D" uid="uid://danqqgqmon3ka" path="res://Graveyard/Parallax Background/Background/Cloud 2.png" id="3_4mjo1"]
+[ext_resource type="Texture2D" uid="uid://dy4e3hs0yrcrs" path="res://Graveyard/Parallax Background/Background/Cloud 1.png" id="4_fdbqn"]
+[ext_resource type="Texture2D" uid="uid://over64hx7yu2" path="res://Graveyard/Parallax Background/Background/Moon.png" id="5_dhbv3"]
+[ext_resource type="Texture2D" uid="uid://cbbhjdtq6n531" path="res://Graveyard/Parallax Background/Mountain/Mountain 1.png" id="6_bya22"]
+[ext_resource type="Texture2D" uid="uid://c2ajirydx5md4" path="res://Graveyard/Parallax Background/Mountain/Mountain 2.png" id="7_6t44y"]
+[ext_resource type="Texture2D" uid="uid://dujmwy1c2fcgm" path="res://Graveyard/Parallax Background/Mountain/Mountain.png" id="8_f4sfb"]
+
+[node name="HomeMenu" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button2" type="Button" parent="CanvasLayer"]
+custom_minimum_size = Vector2(100, 100)
+offset_left = 465.334
+offset_top = 201.873
+offset_right = 699.334
+offset_bottom = 301.873
+theme_override_font_sizes/font_size = 50
+text = "Play"
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+custom_minimum_size = Vector2(100, 100)
+offset_left = 461.096
+offset_top = 377.744
+offset_right = 699.096
+offset_bottom = 477.744
+theme_override_font_sizes/font_size = 50
+text = "Exit"
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(380, 0)
+autoscroll = Vector2(10, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(586, 333)
+scale = Vector2(3.68125, 3.58333)
+texture = ExtResource("1_2m8fs")
+
+[node name="Cloud 3" type="Parallax2D" parent="."]
+repeat_size = Vector2(380, 0)
+autoscroll = Vector2(1000, 0)
+repeat_times = 100
+
+[node name="Sprite2D" type="Sprite2D" parent="Cloud 3"]
+position = Vector2(585, 327)
+scale = Vector2(3.675, 3.55556)
+texture = ExtResource("2_jcilh")
+
+[node name="Cloud 2" type="Parallax2D" parent="."]
+repeat_size = Vector2(380, 0)
+autoscroll = Vector2(1000, 0)
+repeat_times = 100
+
+[node name="Sprite2D" type="Sprite2D" parent="Cloud 2"]
+position = Vector2(595.5, 329)
+scale = Vector2(3.70313, 3.57778)
+texture = ExtResource("3_4mjo1")
+
+[node name="Cloud 1" type="Parallax2D" parent="."]
+repeat_size = Vector2(380, 0)
+autoscroll = Vector2(1000, 0)
+repeat_times = 100
+
+[node name="Sprite2D" type="Sprite2D" parent="Cloud 1"]
+position = Vector2(595.5, 329)
+scale = Vector2(3.70313, 3.57778)
+texture = ExtResource("4_fdbqn")
+
+[node name="Moon" type="Parallax2D" parent="."]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(1000, 0)
+repeat_times = 100
+
+[node name="Sprite2D" type="Sprite2D" parent="Moon"]
+position = Vector2(595.5, 329)
+scale = Vector2(3.70313, 3.57778)
+texture = ExtResource("5_dhbv3")
+
+[node name="Mountain 1" type="Parallax2D" parent="."]
+repeat_size = Vector2(380, 0)
+autoscroll = Vector2(1000, 0)
+repeat_times = 100
+
+[node name="Sprite2D" type="Sprite2D" parent="Mountain 1"]
+position = Vector2(595.5, 329)
+scale = Vector2(3.70313, 3.57778)
+texture = ExtResource("6_bya22")
+
+[node name="Mountain 2" type="Parallax2D" parent="."]
+repeat_size = Vector2(380, 0)
+autoscroll = Vector2(1000, 0)
+repeat_times = 100
+
+[node name="Sprite2D" type="Sprite2D" parent="Mountain 2"]
+position = Vector2(595.5, 329)
+scale = Vector2(3.70313, 3.57778)
+texture = ExtResource("7_6t44y")
+
+[node name="Mountain 3" type="Parallax2D" parent="."]
+repeat_size = Vector2(380, 0)
+autoscroll = Vector2(1000, 0)
+repeat_times = 100
+
+[node name="Sprite2D" type="Sprite2D" parent="Mountain 3"]
+position = Vector2(595.5, 329)
+scale = Vector2(3.70313, 3.57778)
+texture = ExtResource("8_f4sfb")
